@@ -15,6 +15,7 @@
       <form action="/practice.html" method="POST">
         <h1>Burgers</h1>
         <p>Getting info about burgers</p>
+        <section class="protein">
         <input type="text" name="username">
         <br>
         <label for="user-pw">Password</label>
@@ -24,11 +25,105 @@
         <input type="number" name="amount" id="amount" step="1">
         <br>
         <span>rare</span>
-        <input type="range" name="doneness" id="doneness" min="0"max="5"
+        <input type="range" name="doneness" id="doneness" min="0"max="5">
+        <span>Well-Done</span>
+      </section>
+      <section class="toppings">
+        <span>What toppings would you like?</span>
+        <br>
+        <!-- This is where the checkbox goes-->
+        <input type="checkbox" id="lettuce" value="lettuce" name="Topping">
+        <label for="lettuce">lettuce</label>
+
+
+        <!-- !-- This is where the checkbox <goes-->
+          <input type="checkbox" id="tomato" value="tomato" name="Topping">
+          <label for="tomato">tomato</label>
+
+
+
+        <!-- This is where the checkbox goes-->
+        <input type="checkbox" id="Cheese" value="Cheese" name="Cheese">
+        <label for="Cheese">Cheese</label>
+
+        <!-- This is where the checkbox goes-->
+        <input type="checkbox" id="Bacon" value="Bacon" name="Bacon">
+        <label for="Bacon">Bacon</label>
+
+        </section>
+      
+      
+        <section class="cheesy">
+        <span>Would you like to add Cheese</span>
+      <br>
+
+      <input type="radio" name="cheese" id="yes"
+      value="yes">
+      </label>yes</label>
+
+      <input type="radio" name="cheese" id="no"
+      value="no">
+      <label for="no">No</label>
+      </section>
+
+
+      <section class="bun-type">
+      <label for="bun">What type of bun would you like?</label>
+      <!--Dropdown options here! -->
+      <select name="bun" id="bun">
+      <option value="sesame">Sesame</option>
+      <option value="Potato">Potato</option>
+      <option value="pretzel">pretzel</option>
+      <option value="sourdough">sourdough</option>
+      <option value="gluten-free">gluten-free</option>
+      <option>
+      </select>
+      </section class="sauce-selection">
+      <label for="sauce">What type of sauce would you like?</label>
+      <input type="text" list="sauces" id="sauce" name="sauce">
+
+      <datalist id="sauces">
+      <option value="ketchup">ketchup</option>
+      <option value="mayo">mayo</option>
+      <option value="ranch">ranch</option>
+      <option value="sriracha">sriracha</option>
+      </datalist>
+      </section>
+
+      <section class="extra-info">
+        <label for="extra">Anything else you want to add?</label>
+        <br>
+        <text area name="extra" id="extra" cols="40"
+        rows="3">No thanks, it's perfect!</textarea>
+
+      </section>
+
+
+      <br>
+
+
+      <section class="submission">
+      <input type="submit">
+
+
+
+
+
+
+      </section>
+
+
+
       </form>
 
-    </section>
-</body>
+      </section>
+      
+
+
+
+
+
+    </body>
 
 </html>
       
